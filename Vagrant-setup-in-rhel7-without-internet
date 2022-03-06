@@ -1,0 +1,14 @@
+1. Host machine OS: Red Hat Enterprise Linux Server release 7.8 (Maipo)
+2. Download the Vagrant rpm from : https://www.vagrantup.com/downloads
+# Look for Latest Downloads. Choose the proper host os.
+3. Install the vagrant rpm: yum install vagrant_2.2.19_x86_64.rpm
+4. Virtual Box must be isntalled prior running any vagrant: https://www.virtualbox.org/wiki/Downloads
+5. Install Virtual Box and it's extension
+6. Download Vagrant a CentOS Vagtrant Box: https://app.vagrantup.com/centos/boxes/7
+# Choose virtualbox Externally hosted (cloud.centos.org)
+7. Transfer the Box to the Host server.
+8. Do the following:
+cd /home/shafiur/vagrant-vbox/TestVm1
+vagrant box add --name TestVMCentOS file:///home/shafiur/vagrant-download/CentOS-7-x86_64-Vagrant-2004_01.VirtualBox.box
+vagrant init TestVMCentOS
+vagrant up
